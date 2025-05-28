@@ -1,0 +1,190 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "EtherealShadowsoftheGrimdarkRealm",
+				"abbreviation": "ESGR",
+				"full": "Ethereal Shadows of the Grimdark Realm",
+				"version": "1.0",
+				"url": "\"json\": \"https://git.esimonson.kiwi/esimonson/dragonofchaos-homebrew/ethereal_shadows_grimdark_realm.json",
+				"authors": [
+					"DragonOfChaos"
+				],
+				"convertedBy": [
+					"DragonOfChaos"
+				]
+			}
+		]
+	},
+	"spell": [
+		{
+			"name": "Test Spell",
+			"level": 12,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Touching the corpse of a fallen deity while casting this spell will extract any remaining divine spark from the for, consuming the body and empowering the castor with the power and domain of that fallen god if it has not already been claimed."
+			],
+			"source": "EtherealShadowsoftheGrimdarkRealm",
+			"page": 1,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "Corpse of a fallen deity",
+					"consume": true
+				}
+			},
+			"races": [
+				{
+					"name": "Sub-Deity",
+					"source": "EtherealShadowsoftheGrimdarkRealm",
+					"baseName": "Deity",
+					"baseSource": "EtherealShadowsoftheGrimdarkRealm"
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Umbral Legacy",
+			"baseItem": "Longsword|PHB",
+			"type": "M",
+			"rarity": "artifact",
+			"weight": 3,
+			"property": [
+				"V"
+			],
+			"entries": [
+				"Umbral Legacy is a silvered longsword with distinctive features that reflect both the shadowy power it embodies and the legacy of Vácslav's family. The blade is made of polished silver, interrupted by intricate black veins that wind and curl along its length. These veins seem to pulse with an almost imperceptible darkness, hinting at the power contained within.",
+				"The hilt of the sword holds a pommel shaped like a stylized crow in flight, with outstretched wings forming the handguards. The crow's beak curves downward, wrapping around the hilt. At the pommel's base, where the crow's tail would be, two deep blue gemstones are set into the metal. These gemstones seem to absorb and radiate a faint, mysterious light."
+			],
+			"source": "EtherealShadowsoftheGrimdarkRealm",
+			"page": 1,
+			"weaponCategory": "martial",
+			"focus": [
+				"Warlock",
+				"Paladin"
+			],
+			"foundryType": "weapon",
+			"dmg1": "1d8",
+			"dmg2": "1d10",
+			"dmgType": "S"
+		},
+		{
+			"name": "Nebojsa Crest (Shield)",
+			"baseItem": "Shield",
+			"type": "S",
+			"weight": 6,
+			"source": "EtherealShadowsoftheGrimdarkRealm",
+			"page": 1,
+			"rarity": "unknown",
+			"focus": [
+				"Warlock",
+				"Paladin"
+			],
+			"foundryType": "equipment",
+			"entries": [
+				"A shield embossed with the pattern of a black crow. The insignia of the Nebojsa family"
+			],
+			"ac": 2
+		},
+		{
+			"name": "Worn Bag of Holding",
+			"source": "EtherealShadowsoftheGrimdarkRealm",
+			"page": 1,
+			"tier": "minor",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"weight": 15,
+			"entries": [
+				"This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 250 pounds, not exceeding a volume of 32 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.",
+				"If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.",
+				"Placing a bag of holding inside an extradimensional space created by a {@item Heward's handy haversack}, {@item portable hole}, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened."
+			],
+			"containerCapacity": {
+				"weight": [
+					250
+				],
+				"weightless": true
+			},
+			"optionalfeatures": [
+				"replicate magic item|tce"
+			],
+			"lootTables": [
+				"Magic Item Table A",
+				"Magic Item Table B"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Divinis Sanguis",
+			"baseItem": "Dagger|PHB",
+			"type": "M",
+			"rarity": "artifact",
+			"weight": 1,
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"entries": [
+				"This pristine dagger seems to shimmer in the light.",
+				"."
+			],
+			"source": "EtherealShadowsoftheGrimdarkRealm",
+			"page": 1,
+			"weaponCategory": "simple",
+			"foundryType": "weapon",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"dmg2": "5d6 necrotic"
+		}
+	],
+	"feat": [
+		{
+			"name": "Dragon Scale Skin (Blue)",
+			"source": "EtherealShadowsoftheGrimdarkRealm",
+			"resist": [
+				"lightning"
+			],
+			"foundryEffects": [
+				{
+					"name": "AC Increase",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "add",
+							"value": "+1"
+						}
+					]
+				}
+			],
+			"entries": [
+				"Having traded sections of you normal skin to an eclectic merchent with a penchant for the weird, you had the scales of a blue dragon implanted in the missing patches.",
+				"The innate nature of these scales grants you an increased defense and resistance to the dragons element."
+			]
+		}
+	]
+
+}
