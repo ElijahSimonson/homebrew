@@ -1,0 +1,171 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "CreatureCodex",
+				"abbreviation": "CC",
+				"full": "Creature Codex",
+				"version": "1.0"
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Venom-Maw Hydra",
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"source": "CreatureCodex",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "22d12 + 88",
+				"average": 231
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 19,
+			"dex": 17,
+			"con": 18,
+			"int": 5,
+			"wis": 10,
+			"cha": 7,
+			"passive": 18,
+			"cr": "12",
+			"shortName": "Swamp Hydra",
+			"page": 370,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+8",
+				"stealth": "+7"
+			},
+			"resist": [
+				"fire"
+			],
+			"immune": [
+				"acid"
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The swamp hydra can breathe air and water."
+					]
+				},
+				{
+					"name": "Wakeful (Hydra)",
+					"entries": [
+						"While the swamp hydra sleeps, at least one of its heads is awake."
+					]
+				},
+				{
+					"name": "Multiple Heads (Hydra)",
+					"entries": [
+						"The swamp hydra has five heads. While it has more than one head, the swamp hydra has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}.",
+						"Whenever the swamp hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the swamp hydra dies.",
+						"At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The swamp hydra regains 10 hit points for each head regrown in this way."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The venom maw hydra makes as many bite or spit attacks as it has heads."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, plus 5 ({@damage 2d4}) acid damage."
+					]
+				},
+				{
+					"name": "Spit",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 20/60 ft., one target. {@h}13 ({@damage 3d6 + 3}) acid damage, and the target must succeed on a "
+					]
+				},
+				{
+					"name": "Venom Spray {@recharge 5}",
+					"entries": [
+						"The hydra sprays caustic liquid in a 30-foot cone. Each creature in the area must make a {@dc 16} Dexterity saving throw, taking {@h}22 ({@damage 5d8}) acid damage on a failed save, or half as much on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"AOE"
+			],
+			"legendaryActions": 3,
+			"reaction": [
+				{
+					"name": "Tail Lash",
+					"entries": [
+						"When it is hit with a weapon attack within 10 feet of it, the venom maw hydra lashes out with its tail. The attacker must make a DC16 strength saving throw. On a failure, it takes {@h}7({@damage 2d6}) bludgeoning damage and is knocked {@condition prone}. On a success, the target takes half the damage and isn't knocked {@condition prone}."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"legendary": [
+				{
+					"name": "Bite",
+					"entries": [
+						"The venom maw hydra makes one bite attack."
+					]
+				},
+				{
+					"name": "Spit (Costs 2 actions)",
+					"entries": [
+						"The venom maw hydra makes one spit attack."
+					]
+				},
+				{
+					"name": "Wallowing Rampage (Costs 3 Actions)",
+					"entries": [
+						"When the venom maw hydra is in water, it wallows, causing the water to hiss, froth, and splash within 20 feet. Each creature in that area must make a {@dc 16} Dexterity saving throw, taking {@h}14 ({@damage 4d6}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The venom maw hydra can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. the hydra regains spent legendary actions at the start of its turn."
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"environment": [
+				"swamp"
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		}
+	]
+}
